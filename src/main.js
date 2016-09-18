@@ -87,7 +87,6 @@ module.exports = React.createClass({
     completedTasks = completedTasks.slice(0, index).concat(completedTasks.slice(index+1));
 
     this.setState({completedTasks});
-    this.setStorage();
   },
 
   completeTask(index) {
@@ -101,14 +100,11 @@ module.exports = React.createClass({
       tasks,
       completedTasks
     });
-
-    this.setStorage();
   },
 
   addTask() {
     let tasks = this.state.tasks.concat([this.state.task]);
     this.setState({tasks});
-    this.setStorage();
   },
 
 
