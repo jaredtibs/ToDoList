@@ -116,7 +116,7 @@ module.exports = React.createClass({
     return (
       <View style={styles.container}>
         <Text style={styles.header}>
-          Jared's ToDo List
+          Jareds ToDo List
         </Text>
         <TextInput
           style={styles.input}
